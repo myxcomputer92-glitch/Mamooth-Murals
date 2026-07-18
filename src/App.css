@@ -9,16 +9,56 @@ html,body{
   height: auto;
   margin: 0;
   padding: 0;
+  /* font-family: var(--font-first); */
+  /* font-family: var(--font-second); */
+  /* font-family: var(--font-third); */
+}
+
+
+
+h1{
+  font-family: 'second';
+}
+
+p,h3,h4{
+  font-family: 'third';
 }
 
 @font-face {
-  font-family: 'SuissenIntl';
-  src: url('/images/6882e67a90d89df1a9887176_SuisseIntl-Medium-WebM.ttf')
+  font-family: 'first';
+  src: 'url(../public/images/6882e67a90d89df1a9887176_SuisseIntl-Medium-WebM.ttf)'
   format('truetype');
-  font-weight: 500;
+  font-weight:400;
   font-style: normal;
 }
 
 @theme{
-  --font-first:'SuissenIntl',sans-serif;
+  --font-first:'first',sans-serif;
+}
+
+
+
+
+@font-face {
+  font-family: 'second';
+  src: url('/images/6892c333bf67b1d5eafe58a0_Obviously-CondensedBlack.ttf')
+  format('truetype');
+  font-weight:900;
+  font-style: normal;
+}
+
+@theme{
+  --font-second:'second',sans-serif;
+}
+
+@font-face {
+  font-family: 'third';
+  src: url('/images/68805858e095a766b86eb9f6_SuisseIntl-SemiBold-WebM.ttf')
+  format('truetype');
+  font-weight:500;
+  font-style: normal;
+}
+
+@theme{
+  --font-third:'third',sans-serif;
 }
